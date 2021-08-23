@@ -1,0 +1,72 @@
+.electricdrive-page h1 {
+  text-align: center;
+}
+.electricdrive-page .equipment-list {
+  display: flex;
+  flex-direction: row;
+  margin: 10% 0;
+}
+.electricdrive-page .equipment-list-element {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 8rem;
+}
+.electricdrive-page .equipment-list-element h3 {
+  margin-left: 1%;
+  width: 100%;
+}
+.electricdrive-page .equipment-list-element img {
+  margin-left: 3rem;
+}
+.electricdrive-page .equipment-list-numeration {
+  border: 0.2rem solid red;
+  text-align: center;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 40px;
+}
+.electricdrive-page .equipment-list-text {
+  margin-left: 3rem;
+}
+.electricdrive-page a {
+  text-decoration: none;
+  color: #717171;
+  font-style: italic;
+  transition: color 0.4s ease;
+}
+.electricdrive-page a:hover {
+  color: red;
+}
+.electricdrive-page ul {
+  list-style-type: none;
+  color: #717171;
+}
+.electricdrive-page li {
+  color: #717171;
+  font-style: italic;
+}
+
+@media only screen and (max-width: 750px) {
+  .electricdrive-page .equipment-list {
+    flex-direction: column;
+    margin-top: 20%;
+  }
+  .electricdrive-page .equipment-list-element img {
+    display: block;
+    margin: 0 auto;
+  }
+  .electricdrive-page .equipment-list-text {
+    margin-top: 10%;
+    text-align: center;
+  }
+  .electricdrive-page ul {
+    text-align: left;
+  }
+}
+
+/*# sourceMappingURL=electricdrive.css.map */

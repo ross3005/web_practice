@@ -1,0 +1,40 @@
+@import "variables";
+@import "mixins.css";
+
+.service-page {
+  text-align: center;
+  .different-topics{
+    margin: 0 15%;
+    p {
+      @include article-text;
+    }
+    p img {
+      float: left;
+      margin-right: 2%;
+    }
+  }
+  li {
+    list-style-type: none;
+    color: $websiteAdditionalTextColor;
+    font-style: $websiteAdditionalFontStyle;
+    text-align: left;
+  }
+  .topic-header {
+    display: flex;
+    align-items: center;
+    h2 {
+      text-align: left;
+      margin-left: 1%;
+    }
+  }
+  .topic-numeration {
+    border: 0.2rem solid red;
+    text-align: center;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+}

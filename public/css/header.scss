@@ -1,0 +1,111 @@
+@import 'variables';
+
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  border-bottom: 3px solid $headerBorderColor;
+  div {
+    align-items: center;
+  }
+  .menu {
+    display: flex;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 2%;
+  }
+  .menu div{
+    margin: 0 2%;
+  }
+  .menu > div > a {
+    transition: $websiteHoverTextColorHoverTransition
+  }
+  .menu > div > a:hover{
+    color: $headerMenuHoverTextColor;
+  }
+  .button:hover {
+    color: $headerMenuHoverTextColor;
+  }
+  .dropdown {
+    position: relative;
+  }
+  .dropdown > a{
+    padding-bottom: 60px;
+  }
+  .dropdown-inner {
+    display: none;
+    position: absolute;
+    background: white;
+    text-align: left;
+    opacity: 0;
+    width: 280%;
+    top: 515%;
+    z-index: 1;
+  }
+  .dropdown-inner div{
+    padding: 5%;
+    border-bottom: 2px solid $headerBorderColor;
+  }
+  .dropdown-inner div a{
+    transition: $websiteHoverTextColorHoverTransition
+  }
+  .dropdown-inner div a:hover{
+    color: $websiteHoverTextColor;
+  }
+  .dropdown:hover .dropdown-inner{
+    display: block;
+    opacity:1;
+  }
+  a {
+    text-decoration: none;
+    color: $websiteTextColor;
+  }
+  .logoname div {
+    display: inline-block;
+    color: $websiteTextColor;
+    border: 0.2rem solid red;
+    text-align: center;
+    width: 2rem;
+    height: 2rem;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .header {
+    flex-direction: column;
+    .menu {
+      display: flex;
+      justify-content: center;
+      margin-right: 0;
+    }
+    .menu div {
+      margin: 2% 1%;
+    }
+    .dropdown-inner {
+      top: 220%;
+    }
+    .logo {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+@media only screen and (max-width: 880px) {
+  .header {
+    .menu {
+      flex-direction: column;
+      margin: 5%;
+    }
+    .dropdown-inner {
+      position: relative;
+      width: 100%;
+    }
+    .menu > div{
+      margin: 2%;
+    }
+    .slash{
+      display: none;
+    }
+  }
+}

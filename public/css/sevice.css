@@ -1,0 +1,42 @@
+.service-page {
+  text-align: center;
+}
+.service-page .different-topics {
+  margin: 0 15%;
+}
+.service-page .different-topics p {
+  font-style: italic;
+  color: #717171;
+  font-size: large;
+  text-align: justify;
+}
+.service-page .different-topics p img {
+  float: left;
+  margin-right: 2%;
+}
+.service-page li {
+  list-style-type: none;
+  color: #717171;
+  font-style: italic;
+  text-align: left;
+}
+.service-page .topic-header {
+  display: flex;
+  align-items: center;
+}
+.service-page .topic-header h2 {
+  text-align: left;
+  margin-left: 1%;
+}
+.service-page .topic-numeration {
+  border: 0.2rem solid red;
+  text-align: center;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=sevice.css.map */

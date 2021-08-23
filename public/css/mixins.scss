@@ -1,0 +1,12 @@
+@mixin article-text {
+  font-style: italic;
+  color: #717171;
+  font-size: large;
+  text-align: justify;
+}
+
+@mixin article-img {
+  width: 50%;
+  float: left;
+  margin-right: 2%;
+}

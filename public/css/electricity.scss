@@ -1,0 +1,18 @@
+@import "variables";
+@import "mixins.css";
+
+.electricity-page {
+  text-align: center;
+  .different-topics{
+    margin: 0 15%;
+    p {
+      @include article-text;
+    }
+  }
+  li {
+    list-style-type: none;
+    color: $websiteAdditionalTextColor;
+    font-style: $websiteAdditionalFontStyle;
+    text-align: left;
+  }
+}

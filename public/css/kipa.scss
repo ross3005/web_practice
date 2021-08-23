@@ -1,0 +1,49 @@
+@import "variables";
+
+.kipa-page {
+  h1 {
+    text-align: center;
+  }
+
+  .equipment-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .equipment-list-element {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 8rem;
+    h3 {
+      margin-left: $equipmentListElementMarginLeft;
+      width: 100%;
+    }
+    img {
+      margin-left: $equipmentListElementMarginLeft;
+    }
+  }
+
+  .equipment-list-numeration {
+    border: 0.2rem solid red;
+    text-align: center;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 40px;
+  }
+
+  ul {
+    list-style-type: none;
+    color: $websiteAdditionalTextColor;
+  }
+
+  li {
+    color: $websiteAdditionalTextColor;
+    font-style: $websiteAdditionalFontStyle;
+  }
+}

@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["board.scss","variables.scss","mixins.scss"],"names":[],"mappings":"AAIE;EACE;;AAGF;EACE;EACA;EACA;;AAGF;EACE;EACA;EACA;;AACA;EACE;EACA;;AAIJ;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAGF;EACE;EACA,OCpCe;EDqCf,YCjCmC;;ADkCnC;EACE,OCpCkB;;ADwCtB;EACE;;AACA;EE7CF;EACA;EACA;EACA;;AF8CE;EACE;EACA;;;AAIN;EAEI;IACE;;EAGF;IACE","file":"board.css"}

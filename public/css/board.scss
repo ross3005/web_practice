@@ -1,0 +1,67 @@
+@import "variables";
+@import "mixins.css";
+
+.control-panel-page {
+  h1 {
+    text-align: center;
+  }
+
+  .equipment-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .equipment-list-element {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    h3 {
+      margin-left: 1%;
+      width: 100%;
+    }
+  }
+
+  .equipment-list-numeration {
+    border: 0.2rem solid red;
+    text-align: center;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+
+  a {
+    text-decoration: none;
+    color: $websiteTextColor;
+    transition: $websiteHoverTextColorHoverTransition;
+    &:hover {
+      color: $websiteHoverTextColor;
+    }
+  }
+
+  .equipment-description {
+    margin: 0 15%;
+    p {
+      @include article-text
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+@media only screen and (max-width: 750px) {
+  .control-panel-page {
+    .equipment-description {
+      margin: 0 5%
+    }
+
+    .equipment-description p {
+      font-size: medium;
+    }
+  }
+}

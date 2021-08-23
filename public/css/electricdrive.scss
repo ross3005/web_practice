@@ -1,0 +1,86 @@
+@import "variables";
+
+.electricdrive-page {
+  h1 {
+    text-align: center;
+  }
+
+  .equipment-list {
+    display: flex;
+    flex-direction: row;
+    margin: 10% 0;
+  }
+
+  .equipment-list-element {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 8rem;
+    h3 {
+      margin-left: 1%;
+      width: 100%;
+    }
+
+    img {
+      margin-left: 3rem;
+    }
+  }
+
+  .equipment-list-numeration {
+    border: 0.2rem solid red;
+    text-align: center;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 40px;
+  }
+
+  .equipment-list-text {
+    margin-left: 3rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: $websiteAdditionalTextColor;
+    font-style: $websiteAdditionalFontStyle;
+    transition: $websiteHoverTextColorHoverTransition;
+    &:hover {
+      color: $websiteHoverTextColor;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    color: $websiteAdditionalTextColor;
+  }
+
+  li {
+    color: $websiteAdditionalTextColor;
+    font-style: $websiteAdditionalFontStyle;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .electricdrive-page {
+    .equipment-list {
+      flex-direction: column;
+      margin-top: 20%;
+    }
+
+    .equipment-list-element img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .equipment-list-text {
+      margin-top: 10%;
+      text-align: center;
+    }
+
+    ul {
+      text-align: left;
+    }
+  }
+}

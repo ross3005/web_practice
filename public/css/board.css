@@ -1,0 +1,59 @@
+.control-panel-page h1 {
+  text-align: center;
+}
+.control-panel-page .equipment-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.control-panel-page .equipment-list-element {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.control-panel-page .equipment-list-element h3 {
+  margin-left: 1%;
+  width: 100%;
+}
+.control-panel-page .equipment-list-numeration {
+  border: 0.2rem solid red;
+  text-align: center;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+.control-panel-page a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.4s ease;
+}
+.control-panel-page a:hover {
+  color: red;
+}
+.control-panel-page .equipment-description {
+  margin: 0 15%;
+}
+.control-panel-page .equipment-description p {
+  font-style: italic;
+  color: #717171;
+  font-size: large;
+  text-align: justify;
+}
+.control-panel-page .equipment-description img {
+  display: block;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 750px) {
+  .control-panel-page .equipment-description {
+    margin: 0 5%;
+  }
+  .control-panel-page .equipment-description p {
+    font-size: medium;
+  }
+}
+
+/*# sourceMappingURL=board.css.map */

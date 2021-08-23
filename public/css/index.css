@@ -1,0 +1,126 @@
+.main-page #slideshow {
+  overflow: hidden;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 1.5%;
+  border-radius: 20px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.main-page #slideshow figure {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 300.3%;
+  margin: 0;
+  left: 0;
+  animation: 20s slideshow infinite;
+}
+.main-page #slideshow figure img {
+  width: 33.3%;
+  float: left;
+  object-fit: cover;
+  height: 570px;
+}
+@-webkit-keyframes slideshow {
+  20% {
+    margin-left: 0;
+  }
+  30% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -100%;
+  }
+  60% {
+    margin-left: -200%;
+  }
+  80% {
+    margin-left: -200%;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+.main-page .production-divs {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main-page .production-divs div {
+  text-align: center;
+  margin: 2%;
+  padding: 2%;
+  width: 250px;
+  height: 250px;
+  vertical-align: center;
+}
+.main-page .production-divs .production-div {
+  border: 3px solid black;
+  border-radius: 7%;
+  transition: border-color 0.4s ease;
+}
+.main-page .production-divs .production-div span {
+  border: 3px solid black;
+  border-radius: 25%;
+  margin-top: 15%;
+  cursor: pointer;
+  transition: border-color 0.4s ease;
+}
+.main-page .production-divs .production-div:hover {
+  border: 3px solid red;
+}
+.main-page .production-divs .production-div:hover span {
+  border: 3px solid red;
+}
+.main-page .production-divs .production-div h4:hover {
+  border: none;
+}
+.main-page .topic-header {
+  text-align: center;
+  border-top: 3px solid #717171;
+  padding-top: 2%;
+}
+.main-page .about-us-article {
+  margin: 0 15%;
+}
+.main-page .about-us-article p {
+  font-style: italic;
+  color: #717171;
+  font-size: large;
+  text-align: justify;
+}
+.main-page .about-us-article p img {
+  width: 50%;
+  float: left;
+  margin-right: 2%;
+}
+.main-page .license-img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.2s;
+}
+.main-page .license-img:hover {
+  transform: scale(1.5);
+}
+
+@media only screen and (max-width: 850px) {
+  .main-page #slideshow figure img {
+    height: 500px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .main-page #slideshow figure img {
+    height: 300px;
+  }
+  .main-page .production-divs {
+    flex-direction: column;
+  }
+  .main-page .about-us-article {
+    margin: 0 5%;
+  }
+  .main-page .about-us-article p {
+    font-size: medium;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

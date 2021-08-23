@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+}
+
+#app {
+  font-family: "Source Sans Pro", sans-serif;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.headermain-block {
+  margin: 0 8%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .headermain-block {
+    margin: 0 4%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

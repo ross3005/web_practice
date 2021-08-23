@@ -1,0 +1,25 @@
+@import 'variables';
+
+.footer {
+  display: flex;
+  background: lightgray;
+  justify-content: space-between;
+  align-items: center;
+  color: $footerTextColor;
+  font-size: 14px;
+  div {
+    margin: 1% 5%;
+  }
+  .infodiv {
+    margin: 1%;
+    border-radius: 1.5em;
+    padding: 1%;
+  }
+}
+@media only screen and (max-width: 880px) {
+  .footer {
+    .infodiv {
+      padding: 2%;
+    }
+  }
+}
